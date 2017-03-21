@@ -24,6 +24,7 @@ args
   .option('production', 'Only check production', false)
   .option('concurrency', 'Concurrency of requests', config.defaults.concurrency, parseInt)
   .option('json', 'Formats the report in JSON', false)
+  .option('fresh', 'Ignores node_modules when generating report', false)
   .command('report', 'Get a report of your packages', report, ['r'])
   .command('whitelist', 'Whitelist your packages', ['w'])
   .command('config', 'Configure nscm options', ['c'])
